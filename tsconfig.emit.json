@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "temp_emit_js",
+    "declaration": false,
+    "emitDeclarationOnly": false
+  }
+}
