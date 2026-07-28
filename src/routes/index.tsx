@@ -9,7 +9,7 @@ import pvcImg from "@/assets/pvc-planter.jpg";
 import terraceImg from "@/assets/terrace-garden.jpg";
 import bioImg from "@/assets/bio-panel.jpg";
 import greenImg from "@/assets/green-wall.jpg";
-import logo from "@/assets/gts-logo.svg";
+import footerLogo from "@/assets/logo.png";
 import trustLogo from "@/assets/Screenshot 2026-07-17 141243.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -614,7 +614,7 @@ function Index () {
 
               {/* Email Button */}
               <a
-                href='#contact'
+                href='mailto:rajeshkumarparbhat@gmail.com'
                 className='flex items-center gap-1 sm:gap-1.5 md:gap-2 px-2.5 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 bg-[#7FB77E] hover:bg-[#6B8E23] text-white rounded text-xs sm:text-xs md:text-sm font-bold transition-all duration-300 shadow-sm hover:shadow-md flex-shrink-0'
               >
                 <svg className='w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5' fill='currentColor' viewBox='0 0 20 20'>
@@ -630,7 +630,7 @@ function Index () {
           <div className='flex items-center justify-center gap-2 sm:gap-4 md:gap-8 py-2 sm:py-3 border-t border-gray-200 overflow-x-auto'>
             <a href='/' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Home</a>
             <a href='/#products' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Products</a>
-            <a href='/services' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Services</a>
+            <a href='/#services' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Services</a>
             <a href='/#gallery' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Gallery</a>
             <a href='/#contact' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Contact</a>
           </div>
@@ -839,20 +839,20 @@ function Index () {
           </div>
 
           {/* Category Icons Navigation */}
-          <div className='mb-16'>
-            <div className='flex flex-wrap justify-center gap-6 md:gap-8'>
+          <div className='mb-12 sm:mb-16'>
+            <div className='flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8'>
               {Object.keys(mistingSystems).map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveServiceCategory(category)}
-                  className={`flex flex-col items-center gap-3 p-4 rounded-xl transition-all duration-300 transform hover:scale-110 ${
+                  className={`flex flex-col items-center justify-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-110 w-24 sm:w-28 md:w-32 ${
                     activeServiceCategory === category
                       ? 'bg-[#D8F3DC] border-2 border-[#7FB77E] scale-110'
                       : 'bg-white border-2 border-gray-200 hover:border-[#A8CFA8]'
                   }`}
                 >
                   {/* Category Icon Circles */}
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold transition-all ${
+                  <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold transition-all flex-shrink-0 ${
                     activeServiceCategory === category
                       ? 'bg-gradient-to-br from-[#7FB77E] to-[#A8CFA8] text-white'
                       : 'bg-gray-200 text-gray-700'
@@ -863,7 +863,7 @@ function Index () {
                     {category === "Mist Cooling System" && "❄️"}
                     {category === "Outdoor Cooling System" && "☀️"}
                   </div>
-                  <span className={`text-center text-xs md:text-sm font-bold transition-colors ${
+                  <span className={`text-center text-xs sm:text-xs md:text-sm font-bold transition-colors line-clamp-2 leading-tight ${
                     activeServiceCategory === category ? 'text-[#7FB77E]' : 'text-gray-700'
                   }`}>
                     {category}
@@ -1171,28 +1171,29 @@ function Index () {
           </div>
         </div>
       </section>
-      <footer className='border-t-2 border-emerald-200 bg-gradient-to-b from-gray-50 to-emerald-50 py-12'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='grid md:grid-cols-4 gap-8 mb-8'>
+      <footer className='border-t-2 border-emerald-200 bg-gradient-to-b from-gray-50 to-emerald-50 py-8 sm:py-12'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-6 lg:px-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8'>
             {/* Brand */}
             <div>
               <div className='mb-4 group'>
                 <img
-                  src={logo}
-                  alt='GreenTech Solution'
-                  className='h-16 w-auto object-contain mb-3'
+                  src={footerLogo}
+                  alt='GTS Logo'
+                  className='mb-3 h-24 w-auto object-contain sm:h-28'
                 />
+                <h4 className='mb-3 text-base sm:text-lg font-bold text-gray-900'>GreenTech Solution</h4>
+                <p className='text-xs sm:text-sm text-gray-600 leading-relaxed'>
+                  Transforming spaces with premium green wall solutions since 2015.
+                </p>
               </div>
-              <p className='text-base text-gray-600'>
-                Transforming spaces with premium green wall solutions since 2015.
-              </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className='mb-4 text-lg font-bold text-gray-900'>Quick Links</h4>
-              <div className='space-y-2 text-base text-gray-600'>
-                <a href='#products' className='hover:text-emerald-600 transition-colors'>
+              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Quick Links</h4>
+              <div className='space-y-1.5 sm:space-y-2 text-xs sm:text-base text-gray-600'>
+                <a href='#products' className='hover:text-emerald-600 transition-colors block'>
                   Products
                 </a>
                 <a href='#gallery' className='hover:text-emerald-600 transition-colors block'>
@@ -1209,8 +1210,8 @@ function Index () {
 
             {/* Services */}
             <div>
-              <h4 className='mb-4 text-lg font-bold text-gray-900'>Services</h4>
-              <div className='space-y-2 text-base text-gray-600'>
+              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Services</h4>
+              <div className='space-y-1.5 sm:space-y-2 text-xs sm:text-base text-gray-600'>
                 <div>Wall Design</div>
                 <div>Installation</div>
                 <div>Maintenance</div>
@@ -1220,20 +1221,20 @@ function Index () {
 
             {/* Newsletter */}
             <div>
-              <h4 className='mb-4 text-lg font-bold text-gray-900'>Newsletter</h4>
-              <p className='mb-3 text-base text-gray-600'>Get latest green wall ideas</p>
+              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Newsletter</h4>
+              <p className='mb-2 sm:mb-3 text-xs sm:text-base text-gray-600'>Get latest green wall ideas</p>
               <input
                 type='email'
                 placeholder='your@email.com'
-                className='w-full rounded-lg border-2 border-emerald-200 bg-white px-3 py-2 text-base text-gray-900 placeholder-gray-400 focus:border-emerald-600 focus:outline-none'
+                className='w-full rounded-lg border-2 border-emerald-200 bg-white px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-base text-gray-900 placeholder-gray-400 focus:border-emerald-600 focus:outline-none'
               />
             </div>
           </div>
 
           {/* Bottom */}
-          <div className='flex flex-col items-center justify-between border-t-2 border-emerald-200 pt-8 text-base text-gray-600 md:flex-row'>
-            <div>© 2025 GreenTech Solution. All rights reserved.</div>
-            <div className='flex gap-6 mt-4 md:mt-0'>
+          <div className='flex flex-col items-center justify-between border-t-2 border-emerald-200 pt-6 sm:pt-8 text-xs sm:text-base text-gray-600 gap-3 sm:gap-0 sm:flex-row'>
+            <div className='text-center sm:text-left'>© 2025 GreenTech Solution. All rights reserved.</div>
+            <div className='flex gap-4 sm:gap-6'>
               <a href='#' className='hover:text-emerald-600 transition-colors'>
                 Privacy
               </a>

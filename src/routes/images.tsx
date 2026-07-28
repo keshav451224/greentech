@@ -9,6 +9,7 @@ import terraceImg from "@/assets/terrace-garden.jpg";
 import bioImg from "@/assets/bio-panel.jpg";
 import greenImg from "@/assets/green-wall.jpg";
 import logo from "@/assets/Screenshot 2026-07-17 141243.svg";
+import footerLogo from "@/assets/logo.png";
 import PremiumCoverflow from "@/components/PremiumCoverflow";
 
 export const Route = createFileRoute("/images")({
@@ -176,7 +177,7 @@ function ImagesPage() {
       <footer className="border-t-2 border-emerald-200 bg-transparent py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div><div className="flex items-center gap-3 mb-4 group hover:scale-110 transition-all"><div className="p-2 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-50 border-2 border-emerald-200"><img src={logo} alt="GreenTech" className="h-8 w-8 object-contain rounded-full" width={32} height={32} /></div><span className="font-black text-lg text-emerald-700">GreenTech</span></div><p className="text-gray-600 text-sm">Transforming spaces with premium green wall solutions since 2015.</p></div>
+            <div><div className="mb-4 group hover:scale-110 transition-all"><img src={footerLogo} alt="GTS Logo" className="mb-3 h-28 w-auto object-contain" /><span className="font-black text-lg text-emerald-700">GreenTech</span></div><p className="text-gray-600 text-sm">Transforming spaces with premium green wall solutions since 2015.</p></div>
             <div><h4 className="font-bold text-gray-900 mb-4">Quick Links</h4><div className="space-y-2 text-sm text-gray-600">{["Home", "Products", "Gallery", "Contact"].map((link, i) => (<a key={i} href="#" className="block hover:text-emerald-600 hover:translate-x-2 transition-all">{link}</a>))}</div></div>
             <div><h4 className="font-bold text-gray-900 mb-4">Services</h4><div className="space-y-2 text-sm text-gray-600">{["Wall Design", "Installation", "Maintenance", "Support"].map((service, i) => (<div key={i} className="hover:text-emerald-600 hover:translate-x-2 transition-all cursor-pointer">{service}</div>))}</div></div>
             <div><h4 className="font-bold text-gray-900 mb-4">Newsletter</h4><p className="text-gray-600 text-sm mb-3">Get latest green wall ideas</p><input type="email" placeholder="your@email.com" className="w-full rounded-lg bg-white border-2 border-emerald-200 px-3 py-2 text-gray-900 text-sm focus:outline-none focus:border-emerald-600 focus:shadow-lg transition-all" /></div>
