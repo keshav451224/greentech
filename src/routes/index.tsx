@@ -1163,20 +1163,29 @@ function Index () {
                 {/* Social Share */}
                 <div>
                   <p className='text-gray-300 font-bold mb-3'>Share:</p>
-                  <div className='flex items-center gap-3'>
-                    <a href='#' className='w-9 h-9 rounded-full border-2 border-gray-500 hover:border-emerald-400 flex items-center justify-center transition-colors hover:bg-emerald-400/10'>
-                      <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 24 24'>
+                  <div className='flex items-center gap-4'>
+                    {/* Facebook */}
+                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 rounded-full bg-[#1877F2] hover:bg-[#0a66c2] flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
+                      <svg className='w-5 h-5 text-white' fill='currentColor' viewBox='0 0 24 24'>
                         <path d='M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4V9.649C12 8.756 12.251 8 13.468 8H16V4.04C15.554 4.009 14.289 3.9 12.726 3.9c-3.169 0-5.338 1.876-5.338 5.021V8z'/>
                       </svg>
                     </a>
-                    <a href='#' className='w-9 h-9 rounded-full border-2 border-gray-500 hover:border-emerald-400 flex items-center justify-center transition-colors hover:bg-emerald-400/10'>
-                      <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 24 24'>
+                    {/* WhatsApp */}
+                    <a href='https://wa.me' target='_blank' rel='noopener noreferrer' className='w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#20BA5C] flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
+                      <svg className='w-5 h-5 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                        <path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.075-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.754c0 2.654.735 5.229 2.126 7.457L2.513 21.485l7.986-2.094a9.861 9.861 0 007.51 3.099h.005c5.368 0 9.746-4.378 9.746-9.753 0-2.604-.505-5.05-1.502-7.413-1.014-2.465-2.755-4.671-4.773-6.228s-4.368-2.727-6.992-3.035zm0-2.034c3.859 0 7.52 1.547 10.238 4.25 2.718 2.703 4.266 6.318 4.266 10.152 0 7.995-6.545 14.5-14.501 14.5-2.426 0-4.752-.584-6.814-1.686l-7.578 1.987 2.046-7.553C2.791 15.894 2.13 12.271 2.13 8.568c0-7.995 6.545-14.5 14.501-14.5z'/>
+                      </svg>
+                    </a>
+                    {/* LinkedIn */}
+                    <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 rounded-full bg-[#0A66C2] hover:bg-[#095195] flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
+                      <svg className='w-5 h-5 text-white' fill='currentColor' viewBox='0 0 24 24'>
                         <path d='M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.438-.103.25-.129.599-.129.948v5.419h-3.554s.05-8.736 0-9.643h3.554v1.364c.429-.668 1.196-1.618 2.905-1.618 2.121 0 3.71 1.385 3.71 4.362v5.535zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.958-1.715 1.187 0 1.927.76 1.94 1.715 0 .953-.753 1.715-1.983 1.715zm1.946 11.597H3.392V9.209h3.891v11.243zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z'/>
                       </svg>
                     </a>
-                    <a href='#' className='w-9 h-9 rounded-full border-2 border-gray-500 hover:border-emerald-400 flex items-center justify-center transition-colors hover:bg-emerald-400/10'>
-                      <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 24 24'>
-                        <path d='M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7s1.1 5-7 7l5-13s3-5-7-3z'/>
+                    {/* Instagram */}
+                    <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 rounded-full bg-gradient-to-br from-[#FE7E36] via-[#F15245] to-[#D92E7F] hover:opacity-80 flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
+                      <svg className='w-5 h-5 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                        <path d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm4.29-10.195c-.798 0-1.45-.652-1.45-1.45s.652-1.45 1.45-1.45 1.45.652 1.45 1.45-.652 1.45-1.45 1.45z'/>
                       </svg>
                     </a>
                   </div>
