@@ -460,47 +460,6 @@ function HeroSlider () {
           <ChevronRight size={22} />
         </button>
       </div>
-
-      <div className='absolute bottom-7 left-4 z-20 flex items-center gap-2 sm:bottom-9 sm:left-8'>
-        <button
-          onClick={() => setIsPaused(paused => !paused)}
-          className='grid h-9 w-9 place-items-center rounded-full bg-white/85 text-emerald-800 shadow transition hover:bg-white'
-          aria-label={isPaused ? "Play slideshow" : "Pause slideshow"}
-        >
-          {isPaused ? (
-            <Play size={15} fill='currentColor' />
-          ) : (
-            <Pause size={15} fill='currentColor' />
-          )}
-        </button>
-        <div className='flex items-center gap-1.5'>
-          {sliderImages.map((image, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className='group relative h-9 w-12 overflow-hidden rounded-md border border-white/70 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-600'
-              aria-label={`Show ${sliderLabels[idx]}`}
-              aria-current={idx === currentSlide ? "true" : undefined}
-            >
-              <img
-                src={image}
-                alt=''
-                className={`h-full w-full object-cover transition ${
-                  idx === currentSlide
-                    ? "scale-110 opacity-100"
-                    : "opacity-65 group-hover:opacity-100"
-                }`}
-              />
-              {idx === currentSlide && (
-                <span className='absolute inset-x-0 bottom-0 h-0.5 bg-emerald-500' />
-              )}
-            </button>
-          ))}
-        </div>
-        <span className='ml-1 text-xs font-bold tracking-widest text-white drop-shadow'>
-          0{currentSlide + 1} / 0{sliderImages.length}
-        </span>
-      </div>
     </div>
   );
 }
