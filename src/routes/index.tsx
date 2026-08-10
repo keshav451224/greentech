@@ -9,6 +9,8 @@ import pvcImg from "@/assets/pvc-planter.jpg";
 import terraceImg from "@/assets/terrace-garden.jpg";
 import bioImg from "@/assets/bio-panel.jpg";
 import greenImg from "@/assets/green-wall.jpg";
+import aboutImg1 from "@/assets/outdoor-wall.jpg";
+import aboutImg2 from "@/assets/indoor-wall.jpg";
 import footerLogo from "@/assets/logo.png";
 import trustLogo from "@/assets/Screenshot 2026-07-17 141243.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -629,6 +631,7 @@ function Index () {
           {/* Navigation Links */}
           <div className='flex items-center justify-center gap-2 sm:gap-4 md:gap-8 py-2 sm:py-3 border-t border-gray-200 overflow-x-auto'>
             <a href='/' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Home</a>
+            <a href='/#about' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>About</a>
             <a href='/#products' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Products</a>
             <a href='/#services' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Services</a>
             <a href='/#gallery' className='text-xs sm:text-xs md:text-sm font-bold text-gray-700 hover:text-[#7FB77E] transition-colors whitespace-nowrap px-1 sm:px-2'>Gallery</a>
@@ -703,6 +706,152 @@ function Index () {
             <div className='w-1 h-2 bg-[#7FB77E] rounded-full mt-2 animate-bounce' />
           </div>
         </div>
+      </section>
+
+      {/* ==================== ABOUT SECTION ==================== */}
+      <section id='about' className='py-16 sm:py-20 md:py-24 bg-gradient-to-b from-white via-[#F0F8F3] to-white relative overflow-hidden'>
+        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+          {/* Section Header */}
+          <div className='mb-12 md:mb-16 text-center'>
+            <div className='mb-4 inline-flex items-center gap-2 rounded-full border border-[#C8E6C8] bg-[#D8F3DC] px-4 py-2 text-sm font-bold text-[#7FB77E]'>
+              <span className='text-lg'>🌱</span>
+              <span>Our Story</span>
+            </div>
+            <h2 className='text-4xl md:text-5xl font-black text-gray-900 mb-4'>
+              About Our Company
+            </h2>
+            <p className='mx-auto max-w-2xl text-lg md:text-xl text-gray-600 font-medium'>
+              14+ Years of Creating Beautiful, Sustainable Green Walls
+            </p>
+          </div>
+
+          {/* Main Content */}
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
+            {/* Left Column - Content */}
+            <div className='space-y-6 order-2 lg:order-1'>
+              {/* Experience Badge */}
+              <div className='inline-block'>
+                <div className='relative'>
+                  <div className='absolute inset-0 bg-gradient-to-r from-[#7FB77E] to-[#6B8E23] rounded-xl blur-lg opacity-20' />
+                  <div className='relative bg-white border-2 border-[#7FB77E] rounded-xl p-6 shadow-lg'>
+                    <div className='text-center'>
+                      <div className='text-5xl font-black text-[#7FB77E] mb-2'>14+</div>
+                      <div className='text-sm md:text-base font-bold text-gray-900'>Years of Experience</div>
+                      <div className='text-xs text-gray-600 mt-1'>Creating Premium Green Walls</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main Description */}
+              <div className='space-y-4'>
+                <p className='text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
+                  With over 14 years of experience, we specialize in creating innovative green wall and vertical garden solutions that transform ordinary spaces into vibrant, living environments. Our expertise combines thoughtful design, quality plants, reliable installation, and professional maintenance to deliver green spaces that are both beautiful and sustainable.
+                </p>
+                <p className='text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
+                  From commercial buildings and corporate spaces to outdoor environments and architectural projects, we create customized green wall solutions designed to complement the character of every space. Our goal is to bring nature closer to people while enhancing the visual appeal and environmental quality of modern buildings.
+                </p>
+              </div>
+
+              {/* Green Walls Benefits */}
+              <div className='pt-4 border-t-2 border-[#D8F3DC]'>
+                <h3 className='text-lg md:text-xl font-bold text-gray-900 mb-4'>Transforming Spaces with Green Walls</h3>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Vertical Gardens & Living Walls</span>
+                  </div>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Custom Green Wall Design</span>
+                  </div>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Professional Installation</span>
+                  </div>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Expert Plant Selection</span>
+                  </div>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Smart Irrigation Systems</span>
+                  </div>
+                  <div className='flex items-start gap-3'>
+                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
+                      </svg>
+                    </div>
+                    <span className='text-sm md:text-base text-gray-700 font-medium'>Long-term Maintenance</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className='pt-4'>
+                <a
+                  href='/#products'
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-[#7FB77E] hover:bg-[#6B8E23] text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg'
+                >
+                  Explore Our Services
+                  <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 20 20'>
+                    <path fillRule='evenodd' d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 10l-4.293-4.293a1 1 0 010-1.414z' clipRule='evenodd' />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column - Images */}
+            <div className='relative h-96 md:h-[500px] order-1 lg:order-2'>
+              {/* Large Primary Image */}
+              <div className='absolute inset-0 rounded-2xl overflow-hidden shadow-2xl'>
+                <img
+                  src={aboutImg1}
+                  alt='Professional green wall installation with quality plants'
+                  className='w-full h-full object-cover hover:scale-105 transition-transform duration-500'
+                />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent' />
+              </div>
+
+              {/* Secondary Image - Overlapping */}
+              <div className='absolute -bottom-6 -right-6 w-32 sm:w-40 h-32 sm:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white hover:scale-105 transition-transform duration-500'>
+                <img
+                  src={aboutImg2}
+                  alt='Expert technicians maintaining green walls'
+                  className='w-full h-full object-cover'
+                />
+              </div>
+
+              {/* Decorative Accent */}
+              <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#7FB77E]/10 to-[#6B8E23]/10 rounded-full -mr-16 -mt-16' />
+              <div className='absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-[#7FB77E]/10 to-transparent rounded-full -ml-20 -mb-20' />
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Wave Divider */}
+        <div className='absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-white opacity-50' />
       </section>
 
       {/* ==================== PRODUCTS SECTION ==================== */}
