@@ -60,6 +60,7 @@ const products = [
     img: outdoorImg,
     price: "₹850",
     unit: "per sq ft",
+    plantName: "English Ivy",
     desc: "Bio-felt outdoor wall with live plants, weather-resistant frame and drip irrigation.",
   },
   {
@@ -67,6 +68,7 @@ const products = [
     img: greenImg,
     price: "₹1,200",
     unit: "per sq ft",
+    plantName: "Mixed Ferns",
     desc: "End-to-end bio wall design, installation and annual maintenance for offices & cafes.",
   },
   {
@@ -74,6 +76,7 @@ const products = [
     img: indoorImg,
     price: "₹950",
     unit: "per sq ft",
+    plantName: "Pothos",
     desc: "Indoor living green wall with low-light plants and integrated LED grow lighting.",
   },
   {
@@ -81,6 +84,7 @@ const products = [
     img: pvcImg,
     price: "₹450",
     unit: "per sq ft",
+    plantName: "Jasmine",
     desc: "Modular PVC pots on MS frame — lightweight, easy to install and reconfigure.",
   },
   {
@@ -88,6 +92,7 @@ const products = [
     img: bioImg,
     price: "₹1,400",
     unit: "per panel (2x2 ft)",
+    plantName: "Philodendron",
     desc: "Pre-planted modular bio panels. Plug-and-play installation, ready in hours.",
   },
   {
@@ -95,6 +100,7 @@ const products = [
     img: grassImg,
     price: "₹180",
     unit: "per sq ft",
+    plantName: "Artificial Plants",
     desc: "Zero-maintenance UV-stable artificial grass walls with optional flower accents.",
   },
   {
@@ -1046,6 +1052,13 @@ function Index () {
                   <h3 className='font-bold text-gray-900 text-sm mb-2 line-clamp-2 group-hover:text-[#7FB77E] transition-colors'>
                     {product.title}
                   </h3>
+                  
+                  {/* Plant Name */}
+                  {product.plantName && (
+                    <p className='text-xs italic text-gray-500 mb-2' style={{fontFamily: 'Georgia, serif', color: '#6B8E23', opacity: 0.8}}>
+                      plant name : {product.plantName}
+                    </p>
+                  )}
 
                   {/* Price */}
                   <div className='mb-3 pb-3 border-t border-[#C8E6C8]'>
