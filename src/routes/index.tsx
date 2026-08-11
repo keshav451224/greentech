@@ -487,7 +487,7 @@ function Index () {
     const recipient = "rajeshkumarparbhat@gmail.com";
     const subject = `Free Consultation Request - ${contactForm.fullName}`;
     const body = [
-      "New consultation request from the GreenTech Solution website.",
+      "New consultation request from the GreenTech Solution Private Limited website.",
       "",
       `Full Name: ${contactForm.fullName}`,
       `Gmail / Email: ${contactForm.email}`,
@@ -1299,7 +1299,7 @@ function Index () {
                   alt='GTS Logo'
                   className='mb-3 h-24 w-auto object-contain sm:h-28'
                 />
-                <h4 className='mb-3 text-base sm:text-lg font-bold text-gray-900'>GreenTech Solution</h4>
+                <h4 className='mb-3 text-base sm:text-lg font-bold text-gray-900'>GreenTech Solution Private Limited</h4>
                 <p className='text-xs sm:text-sm text-gray-600 leading-relaxed'>
                   Transforming spaces with premium green wall solutions since 2015.
                 </p>
@@ -1350,7 +1350,7 @@ function Index () {
 
           {/* Bottom */}
           <div className='flex flex-col items-center justify-between border-t-2 border-emerald-200 pt-6 sm:pt-8 text-xs sm:text-base text-gray-600 gap-3 sm:gap-0 sm:flex-row'>
-            <div className='text-center sm:text-left'>© 2025 GreenTech Solution. All rights reserved.</div>
+            <div className='text-center sm:text-left'>© 2025 GreenTech Solution Private Limited. All rights reserved.</div>
             <div className='flex gap-4 sm:gap-6'>
               <a href='#' className='hover:text-emerald-600 transition-colors'>
                 Privacy
