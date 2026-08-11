@@ -383,12 +383,12 @@ const mistingSystems = {
 };
 
 const latestProjects = [
-  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", description: "Premium living / English ivy" },
-  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", description: "Modern office / Green foliage" },
-  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Residential Garden Wall", description: "Home exterior / Mixed plants" },
-  { src: greenImg, alt: "Custom green wall feature", title: "Custom Green Wall", description: "Architectural / Designer plants" },
-  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", description: "Urban space / Vertical garden" },
-  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Panel", description: "Modular system / Self-watering" },
+  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", description: "Petunia, Verbena, Bacopa" },
+  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", description: "Pothos, Philodendron, Ferns" },
+  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Vertical Indoor Wall Garden", description: "Monstera, Scindapsus, Syngonium" },
+  { src: greenImg, alt: "Custom green wall feature", title: "PVC Planter Vertical Garden", description: "Ivy, Jasmine, Creeping Fig" },
+  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", description: "Mixed Foliage, Climbing Vines" },
+  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Service", description: "Licorice Plant, Coleus, Dusty Miller" },
 ];
 
 // Hero Slider Component
