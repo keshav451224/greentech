@@ -383,12 +383,12 @@ const mistingSystems = {
 };
 
 const latestProjects = [
-  { src: heroImg, alt: "Lush exterior green wall installation" },
-  { src: indoorImg, alt: "Indoor living wall for a commercial space" },
-  { src: outdoorImg, alt: "Residential vertical garden installation" },
-  { src: greenImg, alt: "Custom green wall feature" },
-  { src: terraceImg, alt: "Rooftop terrace garden project" },
-  { src: bioImg, alt: "Modular bio wall panel installation" },
+  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", description: "Premium living / English ivy" },
+  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", description: "Modern office / Green foliage" },
+  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Residential Garden Wall", description: "Home exterior / Mixed plants" },
+  { src: greenImg, alt: "Custom green wall feature", title: "Custom Green Wall", description: "Architectural / Designer plants" },
+  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", description: "Urban space / Vertical garden" },
+  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Panel", description: "Modular system / Self-watering" },
 ];
 
 // Hero Slider Component
@@ -946,14 +946,23 @@ function Index () {
           >
             {latestProjects.map(project => (
               <SwiperSlide key={project.alt}>
-                <div className='group relative aspect-square overflow-hidden rounded-[1.5rem] bg-[#D8F3DC] shadow-[0_12px_24px_rgba(127,183,126,0.12)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_35px_rgba(127,183,126,0.2)]'>
-                  <img
-                    src={project.src}
-                    alt={project.alt}
-                    className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
-                    loading='lazy'
-                  />
-                  <div className='absolute inset-0 bg-[#7FB77E]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
+                <div className='group flex flex-col'>
+                  <div className='relative aspect-square overflow-hidden rounded-[1.5rem] bg-[#D8F3DC] shadow-[0_12px_24px_rgba(127,183,126,0.12)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_35px_rgba(127,183,126,0.2)]'>
+                    <img
+                      src={project.src}
+                      alt={project.alt}
+                      className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                      loading='lazy'
+                    />
+                    <div className='absolute inset-0 bg-[#7FB77E]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
+                  </div>
+                  {/* Project Info */}
+                  <div className='mt-4 space-y-2'>
+                    <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
+                    <div className='border-2 border-orange-500 bg-orange-50 px-3 py-2 rounded'>
+                      <p className='text-sm font-semibold text-orange-600'>{project.description}</p>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
