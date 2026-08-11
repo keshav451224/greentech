@@ -1053,11 +1053,13 @@ function Index () {
                     {product.title}
                   </h3>
                   
-                  {/* Plant Name */}
+                  {/* Plant Name - Special styling for featured card */}
                   {product.plantName && (
-                    <p className='text-xs italic text-gray-500 mb-2' style={{fontFamily: 'Georgia, serif', color: '#6B8E23', opacity: 0.8}}>
-                      plant name : {product.plantName}
-                    </p>
+                    <div className='mb-3 pb-3'>
+                      <p className='text-xs font-medium text-gray-700'>
+                        Plant Name: <span className='font-semibold text-[#7FB77E]'>{product.plantName}</span>
+                      </p>
+                    </div>
                   )}
 
                   {/* Price */}
