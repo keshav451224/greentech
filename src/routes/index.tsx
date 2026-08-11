@@ -383,12 +383,12 @@ const mistingSystems = {
 };
 
 const latestProjects = [
-  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", description: "Petunia, Verbena, Bacopa" },
-  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", description: "Pothos, Philodendron, Ferns" },
-  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Vertical Indoor Wall Garden", description: "Monstera, Scindapsus, Syngonium" },
-  { src: greenImg, alt: "Custom green wall feature", title: "PVC Planter Vertical Garden", description: "Ivy, Jasmine, Creeping Fig" },
-  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", description: "Mixed Foliage, Climbing Vines" },
-  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Service", description: "Licorice Plant, Coleus, Dusty Miller" },
+  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", plantName: "English Ivy", description: "Petunia, Verbena, Bacopa" },
+  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", plantName: "Pothos", description: "Pothos, Philodendron, Ferns" },
+  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Vertical Indoor Wall Garden", plantName: "Monstera", description: "Monstera, Scindapsus, Syngonium" },
+  { src: greenImg, alt: "Custom green wall feature", title: "PVC Planter Vertical Garden", plantName: "Ivy", description: "Ivy, Jasmine, Creeping Fig" },
+  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", plantName: "Mixed Foliage", description: "Mixed Foliage, Climbing Vines" },
+  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Service", plantName: "Licorice Plant", description: "Licorice Plant, Coleus, Dusty Miller" },
 ];
 
 // Hero Slider Component
@@ -959,6 +959,7 @@ function Index () {
                   {/* Project Info */}
                   <div className='mt-4 space-y-2'>
                     <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
+                    <p className='text-sm font-semibold text-gray-700' style={{fontFamily: 'Georgia, serif'}}>plant name :- {project.plantName}</p>
                     <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>PLANT NAME :- {project.description}</p>
                     <div className='border-2 border-orange-500 bg-orange-50 px-3 py-2 rounded'>
                       <p className='text-sm font-semibold text-orange-600'>{project.description}</p>
