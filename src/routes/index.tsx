@@ -19,6 +19,37 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+// Custom Swiper styles - Override default blue colors to black
+const swiperStyles = `
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000 !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: #000 !important;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #000 !important;
+    opacity: 0.5 !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    opacity: 1 !important;
+  }
+`;
+
+// Inject styles
+if (typeof document !== 'undefined') {
+  const styleElement = document.createElement('style');
+  styleElement.textContent = swiperStyles;
+  document.head.appendChild(styleElement);
+}
+
 export const Route = createFileRoute("/")({
   component: Index,
 });
