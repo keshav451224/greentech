@@ -965,9 +965,7 @@ function Index () {
                   {/* Project Info */}
                   <div className='mt-4 space-y-2'>
                     <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
-                    <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px', textTransform: 'lowercase'}}>
-                      <span style={{textTransform: 'capitalize'}}>P</span>lant name :- {project.description}
-                    </p>
+                    <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>PLANT NAME :- {project.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
