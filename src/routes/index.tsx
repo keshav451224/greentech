@@ -32,9 +32,19 @@ const swiperStyles = `
     color: #000 !important;
   }
   
+  .swiper-pagination {
+    position: relative !important;
+    bottom: auto !important;
+    margin-top: 24px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  
   .swiper-pagination-bullet {
     background-color: #000 !important;
     opacity: 0.5 !important;
+    margin: 0 4px !important;
   }
   
   .swiper-pagination-bullet-active {
@@ -948,7 +958,10 @@ function Index () {
                 slidesPerView: 3,
               },
             }}
-            className='py-4'
+            className='py-4 pb-16'
+            style={{
+              '--swiper-pagination-bottom': '0px',
+            } as React.CSSProperties}
           >
             {latestProjects.map(project => (
               <SwiperSlide key={project.alt}>
