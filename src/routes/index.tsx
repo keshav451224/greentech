@@ -965,7 +965,6 @@ function Index () {
                   {/* Project Info */}
                   <div className='mt-4 space-y-2'>
                     <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
-                    <p className='text-sm font-semibold text-gray-700' style={{fontFamily: 'Georgia, serif'}}>plant name :- {project.plantName}</p>
                     <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>PLANT NAME :- {project.description}</p>
                     <div className='border-2 border-orange-500 bg-orange-50 px-3 py-2 rounded'>
                       <p className='text-sm font-semibold text-orange-600'>{project.description}</p>
