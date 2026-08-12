@@ -389,12 +389,12 @@ const mistingSystems = {
 };
 
 const latestProjects = [
-  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", plantName: "English Ivy", description: "Petunia, Verbena, Bacopa" },
-  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", plantName: "Pothos", description: "Pothos, Philodendron, Ferns" },
-  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Vertical Indoor Wall Garden", plantName: "Monstera", description: "Monstera, Scindapsus, Syngonium" },
-  { src: greenImg, alt: "Custom green wall feature", title: "PVC Planter Vertical Garden", plantName: "Ivy", description: "Ivy, Jasmine, Creeping Fig" },
-  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", plantName: "Mixed Foliage", description: "Mixed Foliage, Climbing Vines" },
-  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Service", plantName: "Licorice Plant", description: "Licorice Plant, Coleus, Dusty Miller" },
+  { src: heroImg, alt: "Lush exterior green wall installation", title: "Vertical Outdoor Wall Garden", plantName: "English Ivy", description: "petunia, verbena, bacopa" },
+  { src: indoorImg, alt: "Indoor living wall for a commercial space", title: "Indoor Living Wall", plantName: "Pothos", description: "pothos, philodendron, ferns" },
+  { src: outdoorImg, alt: "Residential vertical garden installation", title: "Vertical Indoor Wall Garden", plantName: "Monstera", description: "monstera, scindapsus, syngonium" },
+  { src: greenImg, alt: "Custom green wall feature", title: "PVC Planter Vertical Garden", plantName: "Ivy", description: "ivy, jasmine, creeping fig" },
+  { src: terraceImg, alt: "Rooftop terrace garden project", title: "Rooftop Terrace Garden", plantName: "Mixed Foliage", description: "mixed foliage, climbing vines" },
+  { src: bioImg, alt: "Modular bio wall panel installation", title: "Bio Wall Service", plantName: "Licorice Plant", description: "licorice plant, coleus, dusty miller" },
 ];
 
 // Hero Slider Component
@@ -965,7 +965,7 @@ function Index () {
                   {/* Project Info */}
                   <div className='mt-4 space-y-2'>
                     <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
-                    <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>PLANT NAME :- {project.description}</p>
+                    <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>Plant name :- {project.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
