@@ -1052,15 +1052,6 @@ function Index () {
                   <h3 className='font-bold text-gray-900 text-sm mb-2 line-clamp-2 group-hover:text-[#7FB77E] transition-colors'>
                     {product.title}
                   </h3>
-                  
-                  {/* Plant Name - Special styling for featured card */}
-                  {product.plantName && (
-                    <div className='mb-3 pb-3'>
-                      <p className='text-xs font-medium text-gray-700'>
-                        Plant Name: <span className='font-semibold text-[#7FB77E]'>{product.plantName}</span>
-                      </p>
-                    </div>
-                  )}
 
                   {/* Price */}
                   <div className='mb-3 pb-3 border-t border-[#C8E6C8]'>
