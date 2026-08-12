@@ -24,7 +24,7 @@ const swiperStyles = `
   .swiper-button-next,
   .swiper-button-prev {
     color: #000 !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: transparent !important;
   }
   
   .swiper-button-next:after,
@@ -483,7 +483,7 @@ function HeroSlider () {
         {/* Previous Button */}
         <button
           onClick={prevSlide}
-          className='grid h-11 w-11 place-items-center rounded-full border border-white/50 bg-black/25 text-white backdrop-blur transition hover:bg-white hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-white'
+          className='grid h-11 w-11 place-items-center rounded-full border border-white/50 bg-transparent text-white transition hover:bg-white hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-white'
           aria-label='Previous slide'
         >
           <ChevronLeft size={22} />
@@ -491,7 +491,7 @@ function HeroSlider () {
 
         <button
           onClick={nextSlide}
-          className='grid h-11 w-11 place-items-center rounded-full border border-white/50 bg-black/25 text-white backdrop-blur transition hover:bg-white hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-white'
+          className='grid h-11 w-11 place-items-center rounded-full border border-white/50 bg-transparent text-white transition hover:bg-white hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-white'
           aria-label='Next slide'
         >
           <ChevronRight size={22} />
