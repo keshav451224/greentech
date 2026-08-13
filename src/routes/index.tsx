@@ -651,55 +651,55 @@ function Index () {
         <HeroSlider />
 
         {/* Content Overlay */}
-        <div className='relative z-10 mx-auto flex w-full max-w-7xl justify-center px-4 py-20 sm:px-6 lg:px-8'>
+        <div className='relative z-10 mx-auto flex w-full max-w-7xl justify-center px-3 sm:px-4 md:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-20'>
           <div className='max-w-2xl text-center'>
             {/* Badge */}
-            <div className='mb-6 inline-flex items-center gap-2 rounded-full border border-[#C8E6C8] bg-[#D8F3DC] px-4 py-2 text-base font-bold text-[#7FB77E]'>
-              <span className='text-xl'>🌿</span>
+            <div className='mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full border border-[#C8E6C8] bg-[#D8F3DC] px-3 sm:px-4 py-2 text-xs sm:text-base font-bold text-[#7FB77E]'>
+              <span className='text-lg sm:text-xl'>🌿</span>
               <span>Premium Green Wall Solutions Since 2015</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className='text-6xl text-white md:text-7xl font-black text-gray-900 leading-tight mb-6'>
+            <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white font-black leading-tight mb-4 sm:mb-6'>
               Transform Your
-              <span className='block text-emerald-600 mt-2'>Walls Into Nature</span>
+              <span className='block text-emerald-400 sm:text-emerald-500 md:text-emerald-600 mt-1 sm:mt-2'>Walls Into Nature</span>
             </h1>
 
             {/* Description */}
-            <p className='mx-auto mb-8 max-w-xl text-2xl font-medium leading-relaxed text-white'>
+            <p className='mx-auto mb-6 sm:mb-8 max-w-xl text-lg sm:text-xl md:text-2xl font-medium leading-relaxed text-white'>
               Create stunning vertical gardens that bring life, beauty, and sustainability to any
               space. From residential to commercial installations.
             </p>
 
             {/* CTA Buttons */}
-            <div className='mb-12 flex flex-col justify-center gap-4 sm:flex-row'>
+            <div className='mb-8 sm:mb-12 flex flex-col gap-3 sm:gap-4 sm:flex-row justify-center'>
               <a
                 href='#products'
-                className='group inline-flex items-center justify-center gap-2 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] px-8 py-4 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#7FB77E]/20'
+                className='group inline-flex items-center justify-center gap-2 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#7FB77E]/20'
               >
                 Explore Products
                 <span className='group-hover:translate-x-1 transition-transform'>→</span>
               </a>
               <a
                 href='#contact'
-                className='rounded-lg border-2 border-[#A8CFA8] px-8 py-4 text-xl font-bold text-[#7FB77E] transition-all duration-300 hover:bg-[#F0F8F3]'
+                className='rounded-lg border-2 border-[#A8CFA8] px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-bold text-[#7FB77E] transition-all duration-300 hover:bg-[#F0F8F3]'
               >
                 Free Consultation
               </a>
             </div>
 
             {/* Stats */}
-            <div className='mx-auto grid max-w-md grid-cols-3 gap-4 sm:gap-8'>
+            <div className='mx-auto grid max-w-md grid-cols-3 gap-3 sm:gap-4 md:gap-8'>
               {[
                 { number: "500+", label: "Projects Completed" },
                 { number: "10+", label: "Years Experience" },
                 { number: "4.9★", label: "Client Rated" },
               ].map((stat, i) => (
                 <div key={i} className='group'>
-                  <div className='text-5xl font-black text-[#7FB77E] transition-transform group-hover:scale-110'>
+                  <div className='text-3xl sm:text-4xl md:text-5xl font-black text-[#7FB77E] transition-transform group-hover:scale-110'>
                     {stat.number}
                   </div>
-                  <div className='mt-1 text-base font-semibold text-white'>{stat.label}</div>
+                  <div className='mt-1 text-xs sm:text-sm md:text-base font-semibold text-white'>{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -715,34 +715,34 @@ function Index () {
       </section>
 
       {/* ==================== ABOUT SECTION ==================== */}
-      <section id='about' className='py-16 sm:py-20 md:py-24 bg-gradient-to-b from-white via-[#F0F8F3] to-white relative overflow-hidden'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <section id='about' className='py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white via-[#F0F8F3] to-white relative overflow-hidden'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
           {/* Section Header */}
-          <div className='mb-12 md:mb-16 text-center'>
-            <div className='mb-4 inline-flex items-center gap-2 rounded-full border border-[#C8E6C8] bg-[#D8F3DC] px-4 py-2 text-sm font-bold text-[#7FB77E]'>
-              <span className='text-lg'>🌱</span>
+          <div className='mb-10 sm:mb-12 md:mb-16 text-center'>
+            <div className='mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-[#C8E6C8] bg-[#D8F3DC] px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold text-[#7FB77E]'>
+              <span className='text-lg sm:text-xl'>🌱</span>
               <span>Our Story</span>
             </div>
-            <h2 className='text-4xl md:text-5xl font-black text-gray-900 mb-4'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-3 sm:mb-4'>
               About Our Company
             </h2>
-            <p className='mx-auto max-w-2xl text-lg md:text-xl text-gray-600 font-medium'>
+            <p className='mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-gray-600 font-medium'>
               14+ Years of Creating Beautiful, Sustainable Green Walls
             </p>
           </div>
 
           {/* Main Content */}
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center'>
             {/* Left Column - Content */}
-            <div className='space-y-6 order-2 lg:order-1'>
+            <div className='space-y-4 sm:space-y-6 order-2 lg:order-1'>
               {/* Experience Badge */}
               <div className='inline-block'>
                 <div className='relative'>
                   <div className='absolute inset-0 bg-gradient-to-r from-[#7FB77E] to-[#6B8E23] rounded-xl blur-lg opacity-20' />
-                  <div className='relative bg-white border-2 border-[#7FB77E] rounded-xl p-6 shadow-lg'>
+                  <div className='relative bg-white border-2 border-[#7FB77E] rounded-xl p-4 sm:p-6 shadow-lg'>
                     <div className='text-center'>
-                      <div className='text-5xl font-black text-[#7FB77E] mb-2'>14+</div>
-                      <div className='text-sm md:text-base font-bold text-gray-900'>Years of Experience</div>
+                      <div className='text-4xl sm:text-5xl font-black text-[#7FB77E] mb-2'>14+</div>
+                      <div className='text-xs sm:text-sm md:text-base font-bold text-gray-900'>Years of Experience</div>
                       <div className='text-xs text-gray-600 mt-1'>Creating Premium Green Walls</div>
                     </div>
                   </div>
@@ -750,78 +750,78 @@ function Index () {
               </div>
 
               {/* Main Description */}
-              <div className='space-y-4'>
-                <p className='text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
+              <div className='space-y-3 sm:space-y-4'>
+                <p className='text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
                   With over 14 years of experience, we specialize in creating innovative green wall and vertical garden solutions that transform ordinary spaces into vibrant, living environments. Our expertise combines thoughtful design, quality plants, reliable installation, and professional maintenance to deliver green spaces that are both beautiful and sustainable.
                 </p>
-                <p className='text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
+                <p className='text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-medium'>
                   From commercial buildings and corporate spaces to outdoor environments and architectural projects, we create customized green wall solutions designed to complement the character of every space. Our goal is to bring nature closer to people while enhancing the visual appeal and environmental quality of modern buildings.
                 </p>
               </div>
 
               {/* Green Walls Benefits */}
-              <div className='pt-4 border-t-2 border-[#D8F3DC]'>
-                <h3 className='text-lg md:text-xl font-bold text-gray-900 mb-4'>Transforming Spaces with Green Walls</h3>
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+              <div className='pt-3 sm:pt-4 border-t-2 border-[#D8F3DC]'>
+                <h3 className='text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4'>Transforming Spaces with Green Walls</h3>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Vertical Gardens & Living Walls</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Vertical Gardens & Living Walls</span>
                   </div>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Custom Green Wall Design</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Custom Green Wall Design</span>
                   </div>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Professional Installation</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Professional Installation</span>
                   </div>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Expert Plant Selection</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Expert Plant Selection</span>
                   </div>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Smart Irrigation Systems</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Smart Irrigation Systems</span>
                   </div>
-                  <div className='flex items-start gap-3'>
-                    <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-1'>
-                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                  <div className='flex items-start gap-2 sm:gap-3'>
+                    <div className='flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#7FB77E] flex items-center justify-center mt-0.5'>
+                      <svg className='w-3 h-3 sm:w-4 sm:h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
                         <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
                       </svg>
                     </div>
-                    <span className='text-sm md:text-base text-gray-700 font-medium'>Long-term Maintenance</span>
+                    <span className='text-xs sm:text-sm md:text-base text-gray-700 font-medium'>Long-term Maintenance</span>
                   </div>
                 </div>
               </div>
 
               {/* CTA */}
-              <div className='pt-4'>
+              <div className='pt-3 sm:pt-4'>
                 <a
                   href='/#products'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-[#7FB77E] hover:bg-[#6B8E23] text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg'
+                  className='inline-flex items-center gap-2 px-5 sm:px-6 py-2 sm:py-3 bg-[#7FB77E] hover:bg-[#6B8E23] text-white rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-300 hover:scale-105 hover:shadow-lg'
                 >
                   Explore Our Services
-                  <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 20 20'>
+                  <svg className='w-4 h-4 sm:w-5 sm:h-5' fill='currentColor' viewBox='0 0 20 20'>
                     <path fillRule='evenodd' d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 10l-4.293-4.293a1 1 0 010-1.414z' clipRule='evenodd' />
                   </svg>
                 </a>
@@ -829,7 +829,7 @@ function Index () {
             </div>
 
             {/* Right Column - Images */}
-            <div className='relative h-96 md:h-[500px] order-1 lg:order-2'>
+            <div className='relative h-64 sm:h-80 md:h-96 lg:h-[500px] order-1 lg:order-2'>
               {/* Large Primary Image */}
               <div className='absolute inset-0 rounded-2xl overflow-hidden shadow-2xl'>
                 <img
@@ -841,7 +841,7 @@ function Index () {
               </div>
 
               {/* Secondary Image - Overlapping */}
-              <div className='absolute -bottom-6 -right-6 w-32 sm:w-40 h-32 sm:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white hover:scale-105 transition-transform duration-500'>
+              <div className='absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-28 sm:w-32 md:w-40 h-28 sm:h-32 md:h-40 rounded-xl overflow-hidden shadow-xl border-4 border-white hover:scale-105 transition-transform duration-500'>
                 <img
                   src={aboutImg2}
                   alt='Expert technicians maintaining green walls'
@@ -850,8 +850,8 @@ function Index () {
               </div>
 
               {/* Decorative Accent */}
-              <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#7FB77E]/10 to-[#6B8E23]/10 rounded-full -mr-16 -mt-16' />
-              <div className='absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-[#7FB77E]/10 to-transparent rounded-full -ml-20 -mb-20' />
+              <div className='absolute top-0 right-0 w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32 bg-gradient-to-br from-[#7FB77E]/10 to-[#6B8E23]/10 rounded-full -mr-12 sm:-mr-16 -mt-12 sm:-mt-16' />
+              <div className='absolute bottom-0 left-0 w-32 sm:w-36 md:w-40 h-32 sm:h-36 md:h-40 bg-gradient-to-tr from-[#7FB77E]/10 to-transparent rounded-full -ml-16 sm:-ml-20 -mb-16 sm:-mb-20' />
             </div>
           </div>
         </div>
@@ -861,31 +861,31 @@ function Index () {
       </section>
 
       {/* ==================== PRODUCTS SECTION ==================== */}
-      <section id='products' className='py-24 bg-white relative'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <section id='products' className='py-16 sm:py-20 md:py-24 bg-white relative'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
           {/* Section Header */}
-          <div className='text-center max-w-3xl mx-auto mb-16'>
-            <div className='inline-block px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-sm font-bold mb-4'>
+          <div className='text-center max-w-3xl mx-auto mb-12 sm:mb-16'>
+            <div className='inline-block px-3 sm:px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-xs sm:text-sm font-bold mb-3 sm:mb-4'>
               OUR COLLECTION
             </div>
-            <h2 className='text-5xl md:text-6xl font-black text-gray-900 mb-6'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6'>
               Premium Wall Solutions
             </h2>
-            <p className='text-xl text-gray-600'>
+            <p className='text-base sm:text-lg md:text-xl text-gray-600'>
               Choose from our carefully curated selection of vertical garden systems for every space
               and budget.
             </p>
           </div>
 
           {/* Products Grid */}
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6'>
             {products.map(p => (
               <div
                 key={p.title}
                 className='group rounded-2xl overflow-hidden bg-white border-2 border-[#C8E6C8] shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:border-[#7FB77E]'
               >
                 {/* Image */}
-                <div className='relative h-56 overflow-hidden bg-[#D8F3DC]'>
+                <div className='relative h-40 sm:h-48 md:h-56 overflow-hidden bg-[#D8F3DC]'>
                   <img
                     src={p.img}
                     alt={p.title}
@@ -896,22 +896,22 @@ function Index () {
                 </div>
 
                 {/* Content */}
-                <div className='p-6'>
-                  <h3 className='font-bold text-gray-900 text-lg mb-2 group-hover:text-[#7FB77E] transition-colors'>
+                <div className='p-4 sm:p-5 md:p-6'>
+                  <h3 className='font-bold text-gray-900 text-sm sm:text-base md:text-lg mb-2 group-hover:text-[#7FB77E] transition-colors line-clamp-2'>
                     {p.title}
                   </h3>
-                  <p className='text-sm text-gray-600 mb-4 line-clamp-2'>{p.desc}</p>
+                  <p className='text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-2'>{p.desc}</p>
 
                   {/* Price */}
-                  <div className='mb-4 pb-4 border-t-2 border-[#C8E6C8]'>
-                    <div className='text-2xl font-black text-[#7FB77E]'>{p.price}</div>
+                  <div className='mb-3 sm:mb-4 pb-3 sm:pb-4 border-t-2 border-[#C8E6C8]'>
+                    <div className='text-xl sm:text-2xl font-black text-[#7FB77E]'>{p.price}</div>
                     <div className='text-xs text-gray-500 font-semibold'>{p.unit}</div>
                   </div>
 
                   {/* Button */}
                   <a
                     href='#contact'
-                    className='w-full px-4 py-2.5 rounded-lg bg-[#7FB77E] text-white font-bold text-sm hover:bg-[#6B8E23] hover:shadow-lg transition-all duration-300 text-center'
+                    className='w-full px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg bg-[#7FB77E] text-white font-bold text-xs sm:text-sm hover:bg-[#6B8E23] hover:shadow-lg transition-all duration-300 text-center'
                   >
                     Get Quote
                   </a>
@@ -925,15 +925,15 @@ function Index () {
       {/* ==================== GALLERY SECTION ==================== */}
       <section
         id='gallery'
-        className='py-20 md:py-24 bg-gradient-to-b from-[#F0F8F3] via-[#F8FBF9] to-white'
+        className='py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[#F0F8F3] via-[#F8FBF9] to-white'
       >
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
           {/* Section Header */}
-          <div className='text-center max-w-4xl mx-auto mb-16 md:mb-20'>
-            <h2 className='text-5xl md:text-7xl font-black text-slate-900 leading-tight mb-5 md:mb-6'>
+          <div className='text-center max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20'>
+            <h2 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight mb-3 sm:mb-4 md:mb-5 lg:mb-6'>
               Our Latest Projects
             </h2>
-            <p className='text-lg md:text-xl text-slate-600'>
+            <p className='text-base sm:text-lg md:text-xl text-slate-600'>
               Showcase of beautiful green walls we've created for homes and businesses.
             </p>
           </div>
@@ -976,9 +976,9 @@ function Index () {
                     <div className='absolute inset-0 bg-[#7FB77E]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
                   </div>
                   {/* Project Info */}
-                  <div className='mt-4 space-y-2'>
-                    <h3 className='text-lg sm:text-xl font-bold text-gray-900'>{project.title}</h3>
-                    <p className='text-sm font-bold tracking-wide text-gray-800' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>Plant name :- {project.description}</p>
+                  <div className='mt-3 sm:mt-4 space-y-1 sm:space-y-2'>
+                    <h3 className='text-base sm:text-lg md:text-xl font-bold text-gray-900 line-clamp-2'>{project.title}</h3>
+                    <p className='text-xs sm:text-sm font-bold tracking-wide text-gray-800 line-clamp-2' style={{fontFamily: 'Georgia, serif', letterSpacing: '0.5px'}}>Plant name :- {project.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -988,36 +988,36 @@ function Index () {
       </section>
 
       {/* ==================== SERVICES / MISTING SYSTEMS SECTION ==================== */}
-      <section id='services' className='py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <section id='services' className='py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
           {/* Section Header */}
-          <div className='text-center max-w-3xl mx-auto mb-16'>
-            <div className='inline-block px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-sm font-bold mb-4'>
+          <div className='text-center max-w-3xl mx-auto mb-12 sm:mb-16'>
+            <div className='inline-block px-3 sm:px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-xs sm:text-sm font-bold mb-3 sm:mb-4'>
               OUR SERVICES
             </div>
-            <h2 className='text-5xl md:text-6xl font-black text-gray-900 mb-6'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6'>
               Professional Misting & Cooling Systems
             </h2>
-            <p className='text-xl text-gray-600'>
+            <p className='text-base sm:text-lg md:text-xl text-gray-600'>
               Complete range of misting, fogging, cooling, and dust suppression solutions for residential and commercial applications.
             </p>
           </div>
 
           {/* Category Icons Navigation */}
           <div className='mb-12 sm:mb-16'>
-            <div className='flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8'>
+            <div className='flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6'>
               {Object.keys(mistingSystems).map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveServiceCategory(category)}
-                  className={`flex flex-col items-center justify-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-110 w-24 sm:w-28 md:w-32 ${
+                  className={`flex flex-col items-center justify-center gap-1 sm:gap-2 md:gap-3 p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-110 w-20 sm:w-24 md:w-28 lg:w-32 ${
                     activeServiceCategory === category
                       ? 'bg-[#D8F3DC] border-2 border-[#7FB77E] scale-110'
                       : 'bg-white border-2 border-gray-200 hover:border-[#A8CFA8]'
                   }`}
                 >
                   {/* Category Icon Circles */}
-                  <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold transition-all flex-shrink-0 ${
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full flex items-center justify-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold transition-all flex-shrink-0 ${
                     activeServiceCategory === category
                       ? 'bg-gradient-to-br from-[#7FB77E] to-[#A8CFA8] text-white'
                       : 'bg-gray-200 text-gray-700'
@@ -1028,7 +1028,7 @@ function Index () {
                     {category === "Mist Cooling System" && "❄️"}
                     {category === "Outdoor Cooling System" && "☀️"}
                   </div>
-                  <span className={`text-center text-xs sm:text-xs md:text-sm font-bold transition-colors line-clamp-2 leading-tight ${
+                  <span className={`text-center text-xs md:text-sm font-bold transition-colors line-clamp-2 leading-tight ${
                     activeServiceCategory === category ? 'text-[#7FB77E]' : 'text-gray-700'
                   }`}>
                     {category}
@@ -1039,14 +1039,14 @@ function Index () {
           </div>
 
           {/* Products Grid for Selected Category */}
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5 md:gap-6'>
             {mistingSystems[activeServiceCategory]?.map(product => (
               <div
                 key={product.id}
                 className='group rounded-lg overflow-hidden bg-white border-2 border-[#C8E6C8] shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:border-[#7FB77E]'
               >
                 {/* Product Image */}
-                <div className='relative h-40 overflow-hidden bg-[#D8F3DC]'>
+                <div className='relative h-32 sm:h-36 md:h-40 overflow-hidden bg-[#D8F3DC]'>
                   <img
                     src={product.img}
                     alt={product.title}
@@ -1057,19 +1057,19 @@ function Index () {
                 </div>
 
                 {/* Product Content */}
-                <div className='p-4'>
-                  <h3 className='font-bold text-gray-900 text-sm mb-2 line-clamp-2 group-hover:text-[#7FB77E] transition-colors'>
+                <div className='p-3 sm:p-4'>
+                  <h3 className='font-bold text-gray-900 text-xs sm:text-sm mb-2 line-clamp-2 group-hover:text-[#7FB77E] transition-colors'>
                     {product.title}
                   </h3>
 
                   {/* Price */}
-                  <div className='mb-3 pb-3 border-t border-[#C8E6C8]'>
-                    <div className='text-xl font-black text-[#7FB77E]'>{product.price}</div>
+                  <div className='mb-2 sm:mb-3 pb-2 sm:pb-3 border-t border-[#C8E6C8]'>
+                    <div className='text-lg sm:text-xl font-black text-[#7FB77E]'>{product.price}</div>
                     <div className='text-xs text-gray-500 font-semibold'>{product.unit}</div>
                   </div>
 
                   {/* Specifications */}
-                  <div className='space-y-1 mb-4 text-xs text-gray-600'>
+                  <div className='space-y-0.5 mb-3 text-xs text-gray-600'>
                     {product.operating_pressure && (
                       <p><span className='font-semibold'>Operating Pressure:</span> {product.operating_pressure}</p>
                     )}
@@ -1099,7 +1099,7 @@ function Index () {
                   {/* Get Quote Button */}
                   <a
                     href='#contact'
-                    className='w-full block px-3 py-2 rounded-lg bg-[#7FB77E] text-white font-bold text-xs hover:bg-[#6B8E23] hover:shadow-lg transition-all duration-300 text-center'
+                    className='w-full block px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg bg-[#7FB77E] text-white font-bold text-xs hover:bg-[#6B8E23] hover:shadow-lg transition-all duration-300 text-center'
                   >
                     Get Quote
                   </a>
@@ -1109,8 +1109,8 @@ function Index () {
           </div>
 
           {/* View Complete Range CTA */}
-          <div className='mt-16 text-center'>
-            <a href='#services' className='inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] text-white font-bold hover:shadow-lg transition-all duration-300 hover:scale-105'>
+          <div className='mt-12 sm:mt-16 text-center'>
+            <a href='#services' className='inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] text-white font-bold text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105'>
               View Complete Range Of Products →
             </a>
           </div>
@@ -1118,20 +1118,20 @@ function Index () {
       </section>
 
       {/* ==================== WHY CHOOSE US SECTION ==================== */}
-      <section id='why-us' className='py-24 bg-white'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <section id='why-us' className='py-16 sm:py-20 md:py-24 bg-white'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
           {/* Section Header */}
-          <div className='text-center max-w-2xl mx-auto mb-16'>
-            <div className='inline-block px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-sm font-bold mb-4'>
+          <div className='text-center max-w-2xl mx-auto mb-12 sm:mb-16'>
+            <div className='inline-block px-3 sm:px-4 py-2 rounded-full bg-[#D8F3DC] text-[#7FB77E] text-xs sm:text-sm font-bold mb-3 sm:mb-4'>
               WHY US
             </div>
-            <h2 className='text-5xl md:text-6xl font-black text-gray-900 mb-6'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6'>
               Why Choose GreenTech
             </h2>
           </div>
 
           {/* Services Grid */}
-          <div className='grid md:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8'>
             {[
               {
                 icon: "🎨",
@@ -1154,13 +1154,13 @@ function Index () {
             ].map((service, i) => (
               <div
                 key={service.title}
-                className={`group rounded-2xl p-8 bg-gradient-to-br ${service.color} text-[#6B8E23] shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-[#C8E6C8]`}
+                className={`group rounded-2xl p-6 sm:p-8 bg-gradient-to-br ${service.color} text-[#6B8E23] shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-[#C8E6C8]`}
               >
-                <div className='text-5xl mb-4 group-hover:scale-110 transition-transform'>
+                <div className='text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform'>
                   {service.icon}
                 </div>
-                <h3 className='text-2xl font-bold mb-3 text-[#6B8E23]'>{service.title}</h3>
-                <p className='text-[#6B8E23]/80 leading-relaxed'>{service.desc}</p>
+                <h3 className='text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-[#6B8E23]'>{service.title}</h3>
+                <p className='text-sm sm:text-base text-[#6B8E23]/80 leading-relaxed'>{service.desc}</p>
               </div>
             ))}
           </div>
@@ -1170,48 +1170,48 @@ function Index () {
       {/* ==================== CONTACT SECTION ==================== */}
       <section
         id='contact'
-        className='py-24 bg-gray-800 text-white relative overflow-hidden'
+        className='py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-800 text-white relative overflow-hidden'
       >
-        <div className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='grid lg:grid-cols-2 gap-12'>
+        <div className='relative mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12'>
             {/* Left Content */}
             <div className='flex flex-col justify-center'>
-              <h2 className='text-5xl md:text-6xl font-black leading-tight mb-8'>
+              <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 sm:mb-8'>
                 Contact Us
               </h2>
 
               {/* Director Info */}
-              <div className='mb-8'>
-                <div className='flex items-start gap-3 mb-6'>
-                  <div className='text-emerald-400 text-2xl mt-1'>📍</div>
-                  <div>
-                    <h3 className='text-xl font-bold text-white mb-1'>Rajesh Kumar (Director)</h3>
-                    <p className='text-gray-300 font-bold mb-2'>Green Tech Solution Private Limited</p>
-                    <p className='text-gray-400 text-sm leading-relaxed'>
+              <div className='mb-6 sm:mb-8'>
+                <div className='flex items-start gap-2 sm:gap-3 mb-4 sm:mb-6'>
+                  <div className='text-emerald-400 text-xl sm:text-2xl mt-1 flex-shrink-0'>📍</div>
+                  <div className='min-w-0'>
+                    <h3 className='text-lg sm:text-xl font-bold text-white mb-1'>Rajesh Kumar (Director)</h3>
+                    <p className='text-sm sm:text-base text-gray-300 font-bold mb-2'>Green Tech Solution Private Limited</p>
+                    <p className='text-xs sm:text-sm text-gray-400 leading-relaxed'>
                       12 - B, KH No-34/24, Dilip Vihar, Nilothi Extt, Delhi, West New Delhi - 110041, Delhi, India
                     </p>
-                    <a href='#' className='inline-block text-emerald-400 hover:text-emerald-300 font-bold mt-2 transition-colors'>
+                    <a href='#' className='inline-block text-emerald-400 hover:text-emerald-300 font-bold text-xs sm:text-sm mt-2 transition-colors'>
                       Get Directions →
                     </a>
                   </div>
                 </div>
 
                 {/* Send Email */}
-                <div className='flex items-center gap-3 mb-6'>
-                  <div className='text-emerald-400 text-2xl'>✉️</div>
-                  <div>
-                    <p className='text-gray-300 font-bold'>Send Email</p>
-                    <a href='mailto:rajeshkumarparbhat@gmail.com' className='text-emerald-400 hover:text-emerald-300 transition-colors'>
+                <div className='flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6'>
+                  <div className='text-emerald-400 text-xl sm:text-2xl flex-shrink-0'>✉️</div>
+                  <div className='min-w-0'>
+                    <p className='text-gray-300 font-bold text-xs sm:text-sm md:text-base'>Send Email</p>
+                    <a href='mailto:rajeshkumarparbhat@gmail.com' className='text-emerald-400 hover:text-emerald-300 transition-colors text-xs sm:text-sm md:text-base break-all'>
                       rajeshkumarparbhat@gmail.com
                     </a>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div className='flex items-center gap-3 mb-8'>
-                  <div className='text-emerald-400 text-2xl'>📞</div>
+                <div className='flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8'>
+                  <div className='text-emerald-400 text-xl sm:text-2xl flex-shrink-0'>📞</div>
                   <div>
-                    <a href='tel:08043880537' className='text-emerald-400 hover:text-emerald-300 font-bold text-lg transition-colors'>
+                    <a href='tel:08043880537' className='text-emerald-400 hover:text-emerald-300 font-bold text-lg sm:text-xl transition-colors'>
                       08043880537
                     </a>
                   </div>
@@ -1219,23 +1219,23 @@ function Index () {
 
                 {/* Social Share */}
                 <div>
-                  <p className='text-gray-300 font-bold mb-3'>Share:</p>
-                  <div className='flex items-center gap-4'>
+                  <p className='text-gray-300 font-bold mb-2 sm:mb-3 text-sm sm:text-base'>Share:</p>
+                  <div className='flex items-center gap-2 sm:gap-3 md:gap-4'>
                     {/* Facebook - Official Logo */}
-                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className='w-12 h-12 rounded-full bg-[#1877F2] hover:bg-[#166FE5] flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
-                      <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1877F2] hover:bg-[#166FE5] flex items-center justify-center transition-all hover:scale-110 shadow-lg flex-shrink-0'>
+                      <svg className='w-5 h-5 sm:w-6 sm:h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
                         <path d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'/>
                       </svg>
                     </a>
                     {/* LinkedIn - Official Logo */}
-                    <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' className='w-12 h-12 rounded-full bg-[#0A66C2] hover:bg-[#095195] flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
-                      <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                    <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0A66C2] hover:bg-[#095195] flex items-center justify-center transition-all hover:scale-110 shadow-lg flex-shrink-0'>
+                      <svg className='w-5 h-5 sm:w-6 sm:h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
                         <path d='M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.438-.103.25-.129.599-.129.948v5.419h-3.554s.05-8.736 0-9.643h3.554v1.364c.429-.668 1.196-1.618 2.905-1.618 2.121 0 3.71 1.385 3.71 4.362v5.535zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.958-1.715 1.187 0 1.927.76 1.94 1.715 0 .953-.753 1.715-1.983 1.715zm1.946 11.597H3.392V9.209h3.891v11.243zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z'/>
                       </svg>
                     </a>
                     {/* Instagram - Official Logo */}
-                    <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' className='w-12 h-12 rounded-full bg-gradient-to-br from-[#FFC411] via-[#FB1581] to-[#833AB4] hover:opacity-90 flex items-center justify-center transition-all hover:scale-110 shadow-lg'>
-                      <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                    <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' className='w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#FFC411] via-[#FB1581] to-[#833AB4] hover:opacity-90 flex items-center justify-center transition-all hover:scale-110 shadow-lg flex-shrink-0'>
+                      <svg className='w-5 h-5 sm:w-6 sm:h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
                         <path d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm4.29-10.195c-.798 0-1.45-.652-1.45-1.45s.652-1.45 1.45-1.45 1.45.652 1.45 1.45-.652 1.45-1.45 1.45z'/>
                       </svg>
                     </a>
@@ -1248,11 +1248,11 @@ function Index () {
             <div className='relative'>
               <form
                 onSubmit={submitContactForm}
-                className='relative rounded-2xl bg-white text-gray-900 p-8 md:p-10 space-y-6 shadow-2xl'
+                className='relative rounded-2xl bg-white text-gray-900 p-6 sm:p-8 md:p-10 space-y-4 sm:space-y-6 shadow-2xl'
               >
                 {/* Requirement Textarea */}
                 <div>
-                  <label className='block text-sm font-bold text-[#7FB77E] mb-2'>
+                  <label className='block text-xs sm:text-sm font-bold text-[#7FB77E] mb-2'>
                     Describe Your Requirement
                   </label>
                   <textarea
@@ -1260,17 +1260,17 @@ function Index () {
                     value={contactForm.requirement}
                     onChange={e => updateContactForm("requirement", e.target.value)}
                     placeholder="I would like to..."
-                    className='w-full rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200 resize-none'
+                    className='w-full rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200 resize-none'
                   />
                 </div>
 
                 {/* Phone Input with Country Code */}
                 <div>
-                  <label className='block text-sm font-bold text-[#7FB77E] mb-2'>
+                  <label className='block text-xs sm:text-sm font-bold text-[#7FB77E] mb-2'>
                     Phone *
                   </label>
                   <div className='flex items-center gap-2'>
-                    <div className='flex items-center gap-2 px-4 py-3 rounded-lg bg-gray-50 border-2 border-[#C8E6C8] text-gray-600 font-semibold'>
+                    <div className='flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 rounded-lg bg-gray-50 border-2 border-[#C8E6C8] text-gray-600 font-semibold text-xs sm:text-sm flex-shrink-0'>
                       <span>🇮🇳</span>
                       <span>+91</span>
                     </div>
@@ -1281,14 +1281,14 @@ function Index () {
                       type='tel'
                       autoComplete='tel'
                       placeholder='Enter Your Number'
-                      className='flex-1 rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200'
+                      className='flex-1 rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200'
                     />
                   </div>
                 </div>
 
                 {/* Name Input */}
                 <div>
-                  <label className='block text-sm font-bold text-[#7FB77E] mb-2'>
+                  <label className='block text-xs sm:text-sm font-bold text-[#7FB77E] mb-2'>
                     Name
                   </label>
                   <input
@@ -1297,7 +1297,7 @@ function Index () {
                     type='text'
                     autoComplete='name'
                     placeholder='Enter your name'
-                    className='w-full rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200'
+                    className='w-full rounded-lg bg-gray-50 border-2 border-[#C8E6C8] focus:border-[#7FB77E] px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base text-gray-900 placeholder-gray-400 focus:outline-none transition-all duration-200'
                   />
                 </div>
 
@@ -1326,7 +1326,7 @@ function Index () {
                 {/* Submit Button */}
                 <button
                   type='submit'
-                  className='w-full px-8 py-3 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] text-white font-bold text-base transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md'
+                  className='w-full px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg bg-[#7FB77E] hover:bg-[#6B8E23] text-white font-bold text-xs sm:text-base transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md'
                 >
                   Submit
                 </button>
@@ -1339,18 +1339,18 @@ function Index () {
           </div>
         </div>
       </section>
-      <footer className='border-t-2 border-emerald-200 bg-gradient-to-b from-gray-50 to-emerald-50 py-8 sm:py-12'>
-        <div className='mx-auto max-w-7xl px-3 sm:px-6 lg:px-8'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8'>
+      <footer className='border-t-2 border-emerald-200 bg-gradient-to-b from-gray-50 to-emerald-50 py-8 sm:py-12 md:py-16'>
+        <div className='mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8'>
             {/* Brand */}
             <div>
               <div className='mb-4 group'>
                 <img
                   src={footerLogo}
                   alt='GTS Logo'
-                  className='mb-3 h-24 w-auto object-contain sm:h-28'
+                  className='mb-2 sm:mb-3 h-20 sm:h-24 md:h-28 w-auto object-contain'
                 />
-                <h4 className='mb-3 text-base sm:text-lg font-bold text-gray-900'>GreenTech Solution Private Limited</h4>
+                <h4 className='mb-2 sm:mb-3 text-sm sm:text-base md:text-lg font-bold text-gray-900'>GreenTech Solution Private Limited</h4>
                 <p className='text-xs sm:text-sm text-gray-600 leading-relaxed'>
                   Transforming spaces with premium green wall solutions since 2015.
                 </p>
@@ -1359,8 +1359,8 @@ function Index () {
 
             {/* Quick Links */}
             <div>
-              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Quick Links</h4>
-              <div className='space-y-1.5 sm:space-y-2 text-xs sm:text-base text-gray-600'>
+              <h4 className='mb-3 sm:mb-4 text-sm sm:text-base md:text-lg font-bold text-gray-900'>Quick Links</h4>
+              <div className='space-y-1 sm:space-y-1.5 md:space-y-2 text-xs sm:text-sm md:text-base text-gray-600'>
                 <a href='#products' className='hover:text-emerald-600 transition-colors block'>
                   Products
                 </a>
@@ -1378,8 +1378,8 @@ function Index () {
 
             {/* Services */}
             <div>
-              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Services</h4>
-              <div className='space-y-1.5 sm:space-y-2 text-xs sm:text-base text-gray-600'>
+              <h4 className='mb-3 sm:mb-4 text-sm sm:text-base md:text-lg font-bold text-gray-900'>Services</h4>
+              <div className='space-y-1 sm:space-y-1.5 md:space-y-2 text-xs sm:text-sm md:text-base text-gray-600'>
                 <div>Wall Design</div>
                 <div>Installation</div>
                 <div>Maintenance</div>
@@ -1389,27 +1389,27 @@ function Index () {
 
             {/* Newsletter */}
             <div>
-              <h4 className='mb-3 sm:mb-4 text-base sm:text-lg font-bold text-gray-900'>Newsletter</h4>
-              <p className='mb-2 sm:mb-3 text-xs sm:text-base text-gray-600'>Get latest green wall ideas</p>
+              <h4 className='mb-2 sm:mb-3 md:mb-4 text-sm sm:text-base md:text-lg font-bold text-gray-900'>Newsletter</h4>
+              <p className='mb-2 sm:mb-2.5 text-xs sm:text-sm text-gray-600'>Get latest green wall ideas</p>
               <input
                 type='email'
                 placeholder='your@email.com'
-                className='w-full rounded-lg border-2 border-emerald-200 bg-white px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-base text-gray-900 placeholder-gray-400 focus:border-emerald-600 focus:outline-none'
+                className='w-full rounded-lg border-2 border-emerald-200 bg-white px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-900 placeholder-gray-400 focus:border-emerald-600 focus:outline-none'
               />
             </div>
           </div>
 
           {/* Bottom */}
-          <div className='flex flex-col items-center justify-between border-t-2 border-emerald-200 pt-6 sm:pt-8 text-xs sm:text-base text-gray-600 gap-3 sm:gap-0 sm:flex-row'>
-            <div className='text-center sm:text-left'>© 2025 GreenTech Solution Private Limited. All rights reserved.</div>
-            <div className='flex gap-4 sm:gap-6'>
-              <a href='#' className='hover:text-emerald-600 transition-colors'>
+          <div className='flex flex-col items-center justify-between border-t-2 border-emerald-200 pt-4 sm:pt-6 md:pt-8 text-xs sm:text-sm md:text-base text-gray-600 gap-3 sm:gap-4'>
+            <div className='text-center'>© 2025 GreenTech Solution Private Limited. All rights reserved.</div>
+            <div className='flex gap-3 sm:gap-4 md:gap-6'>
+              <a href='#' className='hover:text-emerald-600 transition-colors whitespace-nowrap'>
                 Privacy
               </a>
-              <a href='#' className='hover:text-emerald-600 transition-colors'>
+              <a href='#' className='hover:text-emerald-600 transition-colors whitespace-nowrap'>
                 Terms
               </a>
-              <a href='#' className='hover:text-emerald-600 transition-colors'>
+              <a href='#' className='hover:text-emerald-600 transition-colors whitespace-nowrap'>
                 Sitemap
               </a>
             </div>
